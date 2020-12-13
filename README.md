@@ -40,7 +40,7 @@ Please follow the instructions at [CoDeNet_Detectron2][https://github.com/Dequan
 Please ssh to the remote ultra96 board by running `ssh root@358c4111r1.qicp.vip -p 7890`.
 
 ### 2.1 Latency Results in Table 5 and Figure 8. 
-Please see the instructions in the ipython notebook `CoDeNet.ipynb` on the remote ultra96 board.
+Please see the instructions in the ipython notebook `codenet.ipynb` on the remote ultra96 board.
 
 ### 2.2 HLS Accelerator Source Code
 Please refer to cpp files and the system files under `./hls`. 
