@@ -34,17 +34,18 @@ python test.py ctdet --arch shufflenetv2 --exp_id pascal_shufflenetv2_512_new15_
 ```
 
 ### 1.2 Ablation Study Results in Table 1 
-Please follow the instructions at [CoDeNet_Detectron2][https://github.com/DequanWang/CoDeNet].
+Please follow the instructions at [CoDeNet_Detectron2 Installation][https://github.com/DequanWang/CoDeNet/blob/master/INSTALL.md] to set up the environment.
+We also provide a remote server to run the code. 
 
 #### Command to run last row VOC with deformable convolution: 
 ```
-python tools/train_net.py --config-file configs/centernet/voc/V2_1.0x_voc_512_4gpus_1x_deform_conv_square_depthwise.yaml --eval-only MODEL.WEIGHTS 
+python tools/train_net.py --num-gpus 1 --config-file configs/centernet/voc/V2_1.0x_voc_512_4gpus_1x_deform_conv_square_depthwise.yaml --eval-only MODEL.WEIGHTS 
 output/centernet/voc/V2_1.0x_voc_512_4gpus_1x_deform_conv_square_depthwise/model_final.pth 
 # result: AP: 41.7	AP50: 64.5	AP75: 43.8
 ```
 #### Command to run last row COCO with deformable convolution: 
 ```
-python tools/train_net.py --config-file configs/centernet/coco/V2_1.0x_coco_512_10gpus_1x_deform_conv_square_depthwise.yaml --eval-only MODEL.WEIGHTS 
+python tools/train_net.py --num-gpus 1 --config-file configs/centernet/coco/V2_1.0x_coco_512_10gpus_1x_deform_conv_square_depthwise.yaml --eval-only MODEL.WEIGHTS 
 output/centernet/coco/V2_1.0x_coco_512_10gpus_1x_deform_conv_square_depthwise/model_final.pth 
 # result: AP: 21.6	AP50: 37.4	AP75: 21.8	APs: 6.5	APm: 23.7	APl: 34.8
 ```
