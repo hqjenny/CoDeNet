@@ -2,7 +2,7 @@
 
 ## 1. Object-Detection Networks 
 
-The code of quantized object-detection network model for hardware acceleration is under [dnn/CoDeNet][https://github.com/Zhen-Dong/CoDeNet/tree/9334045f5f96b92ab9256dc90246219b155d2569] submodule. We also have non-quantized models to study impact of hardware-friendly deformable convolution modifications. These models are compatiable with the [Detectron2][https://github.com/facebookresearch/detectron2] library and are under [dnn/CoDeNet_Detectron2][https://github.com/DequanWang/CoDeNet/tree/2e80791e743b14ba3cb8be4f2403921aa395c9aa]. 
+The code of quantized object-detection network model for hardware acceleration is under [dnn/CoDeNet](dnn/CoDeNet) submodule. We also have non-quantized models to study impact of hardware-friendly deformable convolution modifications. These models are compatiable with the [Detectron2](https://github.com/facebookresearch/detectron2) library and are under [dnn/CoDeNet_Detectron2](https://github.com/DequanWang/CoDeNet/tree/2e80791e743b14ba3cb8be4f2403921aa395c9aa). 
 
 ### 1.1 Experimental Results in Table 3. 
 #### Quantized Network Accuracy Table 3. row 3  
@@ -36,7 +36,7 @@ python test.py ctdet --arch shufflenetv2 --exp_id pascal_shufflenetv2_512_new15_
 ```
 
 ### 1.2 Ablation Study Results in Table 1. 
-Please follow the instructions at [CoDeNet_Detectron2 Installation][https://github.com/DequanWang/CoDeNet/blob/master/INSTALL.md] to set up the environment.
+Please follow the instructions at [CoDeNet_Detectron2 Installation](https://github.com/DequanWang/CoDeNet/blob/master/INSTALL.md) to set up the environment.
 We also provide a remote server to evaluate the trained model. 
 
 Command to run VOC result with modified deformable convolution in Table 1. last row: 
@@ -57,5 +57,8 @@ Please ssh to the remote ultra96 board by running `ssh root@358c4111r1.qicp.vip 
 Please see the instructions in the ipython notebook `codenet.ipynb` on the remote ultra96 board.
 
 ### 2.2 HLS Accelerator Source Code
-Please refer to cpp files and the system files under `./hls`. 
-The precompiled FPGA image is under `./bitfile`.
+Please refer to cpp files and the system files under [./hls](hls). 
+The precompiled FPGA image is under [./bitfile](bitfile).
+The project file can be downloaded [here](https://people.eecs.berkeley.edu/~qijing.huang/2021FPGA/CoDeNet.xpr.zip). 
+The hls project can be downloaded [here]().
+
