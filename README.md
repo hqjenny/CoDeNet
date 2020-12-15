@@ -60,5 +60,5 @@ Please see the instructions in the ipython notebook `codenet.ipynb` on the remot
 Please refer to cpp files and the system files under [./hls](hls). 
 The precompiled FPGA image is under [./bitfile](bitfile).
 The project file can be downloaded [here](https://people.eecs.berkeley.edu/~qijing.huang/2021FPGA/CoDeNet.xpr.zip). 
-The hls project can be downloaded [here]().
+The hls project can be downloaded [here](https://people.eecs.berkeley.edu/~qijing.huang/2021FPGA/CoDeNet_hls.zip).
 
