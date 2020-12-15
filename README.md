@@ -39,14 +39,12 @@ We also provide a remote server to run the code.
 
 #### Command to run last row VOC with deformable convolution: 
 ```
-python tools/train_net.py --num-gpus 1 --config-file configs/centernet/voc/V2_1.0x_voc_512_4gpus_1x_deform_conv_square_depthwise.yaml --eval-only MODEL.WEIGHTS 
-output/centernet/voc/V2_1.0x_voc_512_4gpus_1x_deform_conv_square_depthwise/model_final.pth 
+python tools/train_net.py --num-gpus 1 --config-file configs/centernet/voc/V2_1.0x_voc_512_4gpus_1x_deform_conv_square_depthwise.yaml --eval-only MODEL.WEIGHTS output/centernet/voc/V2_1.0x_voc_512_4gpus_1x_deform_conv_square_depthwise/model_final.pth 
 # result: AP: 41.7	AP50: 64.5	AP75: 43.8
 ```
 #### Command to run last row COCO with deformable convolution: 
 ```
-python tools/train_net.py --num-gpus 1 --config-file configs/centernet/coco/V2_1.0x_coco_512_10gpus_1x_deform_conv_square_depthwise.yaml --eval-only MODEL.WEIGHTS 
-output/centernet/coco/V2_1.0x_coco_512_10gpus_1x_deform_conv_square_depthwise/model_final.pth 
+python tools/train_net.py --num-gpus 1 --config-file configs/centernet/coco/V2_1.0x_coco_512_10gpus_1x_deform_conv_square_depthwise.yaml --eval-only MODEL.WEIGHTS output/centernet/coco/V2_1.0x_coco_512_10gpus_1x_deform_conv_square_depthwise/model_final.pth 
 # result: AP: 21.6	AP50: 37.4	AP75: 21.8	APs: 6.5	APm: 23.7	APl: 34.8
 ```
 
