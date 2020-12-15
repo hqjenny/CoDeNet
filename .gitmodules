@@ -1,3 +1,6 @@
 [submodule "dnn/CoDeNet"]
 	path = dnn/CoDeNet
 	url = https://github.com/Zhen-Dong/CoDeNet
+[submodule "dnn/CoDeNet_Detectron2"]
+	path = dnn/CoDeNet_Detectron2
+	url = https://github.com/DequanWang/CoDeNet
