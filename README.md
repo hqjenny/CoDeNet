@@ -51,14 +51,19 @@ python tools/train_net.py --num-gpus 1 --config-file configs/centernet/coco/V2_1
 ```
 
 ## 2. Object-Detection Accelerator
-Please ssh to the remote ultra96 board by running `ssh root@358c4111r1.qicp.vip -p 7890`.
+We evaluate the latency of our network on the [Ultra96 PYNQ platform](https://ultra96-pynq.readthedocs.io/en/latest/index.html). 
 
-### 2.1 Latency Results in Table 5 and Figure 8. 
-Please see the instructions in the ipython notebook `codenet.ipynb` on the remote ultra96 board.
-
-### 2.2 HLS Accelerator Source Code
+### 2.1 HLS Accelerator Source Code
 Please refer to cpp files and the system files under [./hls](hls). 
 The precompiled FPGA image is under [./bitfile](bitfile).
 The project file can be downloaded [here](https://people.eecs.berkeley.edu/~qijing.huang/2021FPGA/CoDeNet.xpr.zip). 
 The hls project can be downloaded [here](https://people.eecs.berkeley.edu/~qijing.huang/2021FPGA/CoDeNet_hls.zip).
+
+### 2.2 Software Invocation Source Code 
+The source code for running the first layer layer latency is under [sw/tvm](sw/tvm). Please follow the [sw/tvm/README.md](sw/tvm/README.md) to run it. 
+The source code for calling the accelearator is in [codenet.ipynb](sw/codenet.ipynb). 
+
+### 2.3 Latency Results in Table 5 and Figure 8. 
+Please connect to the Ultra96 board and browse to the ipython notebook page `http://192.168.2.1:9090/`.
+Upload the `sw/codenet.ipynb` and `sw/bitfile` folder to the remote FPGA. Run the iptyon notebook to see the latency results. 
 
