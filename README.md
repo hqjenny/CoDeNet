@@ -1,4 +1,5 @@
-# CoDeNet Artifacts 
+# CoDeNet: Efficient Deployment of Input-Adaptive Object Detection on Embedded FPGAs
+![title](https://zenodo.org/badge/doi/10.5281/zenodo.4341395.svg)
 
 ## 1. Object-Detection Networks 
 
