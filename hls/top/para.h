@@ -3,33 +3,26 @@
 
 using namespace std;
 #define IN_W 8
-
 #define OUT_W 8
 
-typedef ap_uint<IN_W> T_IN;
-typedef ap_uint<OUT_W> T_OUT;
+#define FM_W 8  //8 bits feature map
+#define W_W 4   //4 bits weights
+#define S_W 16  //16 bits scale
+#define B_W 16  //16 bits bias
+#define SHIFT_W0 16 //16 bits shift
 
-#define FM_W 8
-#define W_W 8
-#define S_W 16
-#define B_W 16
-#define SHIFT_W0 16
-typedef ap_uint<W_W> T_W;
-#define SUM_W 18
+#define SUM_W 24 //18 bits partial sum
 
 typedef ap_uint<SUM_W> T_SUM;
- 
+
 #define PE_3 16
-//#define PA_0 16
 #define PA_0 16
 #define PE_0 16
 
-#define MAX_D 512
-#define MAX_IC 512
-#define MAX_OC 512
-#define MAX_C 512
-//#define PA_3 32
-//#define PE_3 16
-#define LINE_BUFF_MAX 3
-#define KERNEL  3
-#define PADDING_MAX 1
+#define MAX_D 512  //MAX image size
+#define MAX_IC 512 // MAX input channel
+#define MAX_OC 1024 //MAX output channel
+#define MAX_C 1024  //MAX 3x3 channel
+#define MAX_WC 512 * 32 // MAX linebuffer width
+
+
