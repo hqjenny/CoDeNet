@@ -128,8 +128,6 @@ void wrapper(
 ) {
 #pragma HLS INLINE
 
-
-
 	hls::stream<ap_int<FM_W*PE_3> > fin;
 #pragma HLS STREAM variable=fin depth=2 dim=1
 	hls::stream<ap_int<FM_W*PE_3> > f1;
@@ -168,7 +166,6 @@ void wrapper(
 	// write output to dram
 	S2M<PE_0, FM_W, OUT_W>(f3, out, batch * CONV_D * CONV_D * OC / PE_0);
 
-
 }
 
 void top
@@ -190,14 +187,12 @@ void top
         bool relu3                  // relu flag for 3x3; 1 if use relu
 ) {
 
-
 #pragma HLS INTERFACE m_axi port=fmap offset=slave bundle=gmem0 depth=2
 #pragma HLS INTERFACE m_axi port=out offset=slave bundle=gmem1 depth=2
 #pragma HLS INTERFACE m_axi port=k0_1 bundle=gmem2 depth=2
 #pragma HLS INTERFACE m_axi port=k0_3 bundle=gmem3 depth=2
 #pragma HLS INTERFACE m_axi port=quant bundle=gmem4 depth=2
 #pragma HLS INTERFACE m_axi port=offsets bundle=gmem5 depth=2
-//#endif
 
 #pragma HLS INTERFACE s_axilite port=fmap bundle=control
 #pragma HLS INTERFACE s_axilite port=out bundle=control
