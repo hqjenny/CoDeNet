@@ -3,7 +3,7 @@
 
 ## 1. Object-Detection Networks 
 
-The code of quantized object-detection network model for hardware acceleration is under [dnn/CoDeNet](dnn/CoDeNet) submodule. We also have non-quantized models to study impact of hardware-friendly deformable convolution modifications. These models are compatiable with the [Detectron2](https://github.com/facebookresearch/detectron2) library and are under [dnn/CoDeNet_Detectron2](https://github.com/DequanWang/CoDeNet/tree/2e80791e743b14ba3cb8be4f2403921aa395c9aa). 
+The code of quantized object-detection network model for hardware acceleration is under [dnn/CoDeNet](https://github.com/Zhen-Dong/CoDeNet) submodule. We also have non-quantized models to study impact of hardware-friendly deformable convolution modifications. These models are compatiable with the [Detectron2](https://github.com/facebookresearch/detectron2) library and are under [dnn/CoDeNet_Detectron2](https://github.com/DequanWang/CoDeNet/tree/2e80791e743b14ba3cb8be4f2403921aa395c9aa). 
 
 ### 1.1 Experimental Results in Table 3. 
 #### Quantized Network Accuracy Table 3. row 3  
